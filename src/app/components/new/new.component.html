@@ -1,9 +1,14 @@
-<div style="text-align: center;" *ngIf="user">
-    <h1>¡Usuario creado!</h1>
-    <p>Id: {{user.id}}
-        <br> Nombre: {{user.name}}
-        <br>Trabajo: {{user.job}}
-        <br>
-        Creado: {{user.createdAt|date}}
-    </p>
+<div>
+    <div class="card note note-success"
+        style="text-align: center; margin: 100px; border-color: #139AD6; box-shadow: 1 4px 8px rgba(0, 0, 0, 0.1);"
+        *ngIf="user">
+        <h1>¡Usuario creado!</h1>
+        <p>
+            Id: {{user.id}}
+            <br style="color: #139AD6;"> Nombre: {{user.name}}
+            <br>Trabajo: {{user.job}}
+            <br>
+            Creado: {{user.createdAt|date}}
+        </p>
+    </div>
 </div>
